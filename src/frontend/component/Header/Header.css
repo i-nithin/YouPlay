@@ -1,0 +1,112 @@
+.logo {
+  width: 8.75rem;
+  cursor: pointer;
+}
+.header {
+  padding: 0.5rem 1rem;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 16%), 0 2px 1px 0px rgb(0 0 0 / 23%);
+  position: sticky;
+  top: 0;
+}
+.header-main {
+  position: sticky;
+  top: 0;
+  background: var(--color-background);
+  z-index: 2;
+}
+
+.searchbar-container {
+  background-color: var(--color-background-accent-1);
+  height: 2.4rem;
+  color: var(--color-foreground);
+  border-radius: 4px;
+  padding: 0.313rem 0.625rem;
+  width: 50%;
+  align-self: center;
+}
+
+.searchbar-container:focus-within {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 10px;
+}
+.searchbar input {
+  height: 2rem;
+  flex-grow: 1;
+}
+
+.eplaybtn {
+  padding: 5px 0.625rem;
+  border: 1px solid var(--color-foreground-accent-1);
+  width: fit-content;
+  color: var(--color-foreground);
+}
+
+.eplaybtn-primary {
+  background-color: #e32832;
+  background-image: linear-gradient(266deg, #bf1922 0%, #92131a 74%);
+  color: white;
+}
+.header-right-container {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.icon-btn {
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  color: var(--color-foreground);
+}
+
+.icon-btn:hover {
+  color: var(--color-foreground-accent-1);
+  background-color: var(--color-background-accent);
+}
+
+.toggle-mode {
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
+  transform: rotate(50deg);
+}
+
+.toggle-mode1 {
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
+  transform: rotate(0deg);
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 40em) {
+  .searchbar-container {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 40.063em) and (max-width: 64em) {
+}
+
+@media screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+@media screen and (max-width: 120em) {
+}

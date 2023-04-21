@@ -1,0 +1,13 @@
+.small-video-card {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+.small-video-card:hover {
+  background-color: var(--color-background-accent-1);
+}
+.small-video-img {
+  width: 45%;
+}

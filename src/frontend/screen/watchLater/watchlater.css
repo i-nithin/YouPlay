@@ -1,0 +1,42 @@
+.small-video-img {
+  width: 10.625rem;
+}
+
+.morepages-container {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+.morepages-video {
+  max-width: 30rem;
+  position: relative;
+}
+
+.morepages-list-container {
+  flex-grow: 1;
+}
+.morepages-title {
+  background-color: var(--color-background-accent-3);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.morepages-title button {
+  font-size: 13px;
+}
+
+.icon-btn {
+  border-radius: 50%;
+  padding: 5px;
+}
+.icon-btn:hover {
+  background-color: var(--color-background);
+}
+
+@media screen and (max-width: 64em) {
+  .morepages-container {
+    flex-direction: column;
+  }
+}
